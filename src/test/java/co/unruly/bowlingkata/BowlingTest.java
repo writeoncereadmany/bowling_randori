@@ -25,4 +25,10 @@ public class BowlingTest {
         assertEquals(1, game.getScore());
     }
 
+    @Test
+    public void shouldReturnScoreForAPairOfNonZeroRolls() {
+        Bowling game = new Bowling(1,6);
+        assertEquals(7, game.getScore());
+    }
+
 }
