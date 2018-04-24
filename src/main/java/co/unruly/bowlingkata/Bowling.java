@@ -7,8 +7,10 @@ public class Bowling {
     public Bowling() {
     }
 
-    public Bowling(int score) {
-        this.score = score;
+    public Bowling(int... scores) {
+        for(int score: scores) {
+            this.score = score;
+        }
     }
 
     public int getScore() {
