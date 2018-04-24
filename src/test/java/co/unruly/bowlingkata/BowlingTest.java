@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class BowlingTest {
 
     @Test
-    public void startGameResultsTest() {
+    public void shouldReturnZeroAsScoreForNewGame() {
         Bowling game = new Bowling();
 
         assertEquals(0, game.getScore());
