@@ -6,7 +6,7 @@ public class Bowling {
 
     public Bowling(int... scores) {
         for(int score: scores) {
-            this.score = score;
+            this.score += score;
         }
     }
 
