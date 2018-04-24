@@ -8,7 +8,8 @@ import static org.hamcrest.Matchers.is;
 public class BowlingTest {
 
     @Test
-    public void placeholderTest() {
-        assertThat(true, is(true));
+    public void startGameResultsTest() {
+        Bowling game = new Bowling();
+        assertEqual(game.getScore(), 0);
     }
 }
