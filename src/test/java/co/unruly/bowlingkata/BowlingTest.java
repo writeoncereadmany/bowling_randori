@@ -14,8 +14,15 @@ public class BowlingTest {
     }
 
     @Test
-    public void shouldReturnScoreForAsingleRoll() {
+    public void shouldReturnScoreForASingleNonScoringRoll() {
         Bowling game = new Bowling(0);
         assertEquals(0, game.getScore());
     }
+
+    @Test
+    public void shouldReturnScoreForASingleNonZeroRoll() {
+        Bowling game = new Bowling(1);
+        assertEquals(1, game.getScore());
+    }
+
 }
