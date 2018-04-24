@@ -12,4 +12,10 @@ public class BowlingTest {
 
         assertEquals(0, game.getScore());
     }
+
+    @Test
+    public void shouldReturnScoreForAsingleRoll() {
+        Bowling game = new Bowling(0);
+        assertEquals(0, game.getScore());
+    }
 }
